@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C29EA11279E2BE80066FE0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C29EA10279E2BE80066FE0D /* main.cpp */; };
+		3C29EA1D279E2D4C0066FE0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C29EA1C279E2D4C0066FE0D /* main.cpp */; };
+		3C29EA20279E2D940066FE0D /* HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C29EA1E279E2D940066FE0D /* HelloWorld.cpp */; };
+		3C29EA35279EA7BE0066FE0D /* libgumbo.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C29EA2E279E9F480066FE0D /* libgumbo.1.dylib */; };
+		3C29EA36279EA7C20066FE0D /* libcpr.1.7.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C29EA2C279E9F2C0066FE0D /* libcpr.1.7.2.dylib */; };
+		3C29EA37279EA7C50066FE0D /* libgumbo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C29EA2A279E991D0066FE0D /* libgumbo.a */; };
+		3C29EA38279EA7C70066FE0D /* libcpr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C29EA28279E31E10066FE0D /* libcpr.a */; };
+		3C29EA42279F2D1E0066FE0D /* Scraper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C29EA41279F2D1E0066FE0D /* Scraper.cpp */; };
+		3C29EA4A27A085EC0066FE0D /* StockTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C29EA4827A085EC0066FE0D /* StockTracker.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +31,22 @@
 
 /* Begin PBXFileReference section */
 		3C29EA0D279E2BE80066FE0D /* WebScraper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WebScraper; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C29EA10279E2BE80066FE0D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3C29EA1C279E2D4C0066FE0D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		3C29EA1E279E2D940066FE0D /* HelloWorld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorld.cpp; sourceTree = SOURCE_ROOT; };
+		3C29EA1F279E2D940066FE0D /* HelloWorld.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloWorld.hpp; sourceTree = SOURCE_ROOT; };
+		3C29EA26279E31800066FE0D /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = ../../../../../../opt/homebrew/Cellar/cpr/1.7.2/include; sourceTree = "<group>"; };
+		3C29EA28279E31E10066FE0D /* libcpr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcpr.a; path = ../../../../../../opt/homebrew/Cellar/cpr/1.7.2/lib/libcpr.a; sourceTree = "<group>"; };
+		3C29EA2A279E991D0066FE0D /* libgumbo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgumbo.a; path = "../../../../../../opt/homebrew/Cellar/gumbo-parser/0.10.1/lib/libgumbo.a"; sourceTree = "<group>"; };
+		3C29EA2C279E9F2C0066FE0D /* libcpr.1.7.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcpr.1.7.2.dylib; path = ../../../../../../opt/homebrew/Cellar/cpr/1.7.2/lib/libcpr.1.7.2.dylib; sourceTree = "<group>"; };
+		3C29EA2E279E9F480066FE0D /* libgumbo.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgumbo.1.dylib; path = "/Users/siddharthhathi/OneDrive/Everything/Projects/WebScraper/../../../../../../opt/homebrew/Cellar/gumbo-parser/0.10.1/lib/libgumbo.1.dylib"; sourceTree = "<absolute>"; };
+		3C29EA3A279EA9880066FE0D /* WebScraper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebScraper.entitlements; sourceTree = SOURCE_ROOT; };
+		3C29EA3B279F135D0066FE0D /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3C29EA40279F2D1E0066FE0D /* Scraper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Scraper.hpp; path = Scraper/Scraper.hpp; sourceTree = SOURCE_ROOT; };
+		3C29EA41279F2D1E0066FE0D /* Scraper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scraper.cpp; path = Scraper/Scraper.cpp; sourceTree = SOURCE_ROOT; };
+		3C29EA43279F50D10066FE0D /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = CMakeLists.txt; path = Scraper/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3C29EA4427A0432E0066FE0D /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = "<group>"; };
+		3C29EA4827A085EC0066FE0D /* StockTracker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StockTracker.cpp; sourceTree = "<group>"; };
+		3C29EA4927A085EC0066FE0D /* StockTracker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StockTracker.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C29EA36279EA7C20066FE0D /* libcpr.1.7.2.dylib in Frameworks */,
+				3C29EA37279EA7C50066FE0D /* libgumbo.a in Frameworks */,
+				3C29EA35279EA7BE0066FE0D /* libgumbo.1.dylib in Frameworks */,
+				3C29EA38279EA7C70066FE0D /* libcpr.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +67,10 @@
 		3C29EA04279E2BE80066FE0D = {
 			isa = PBXGroup;
 			children = (
+				3C29EA4427A0432E0066FE0D /* build */,
 				3C29EA0F279E2BE80066FE0D /* WebScraper */,
 				3C29EA0E279E2BE80066FE0D /* Products */,
+				3C29EA25279E31800066FE0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +85,46 @@
 		3C29EA0F279E2BE80066FE0D /* WebScraper */ = {
 			isa = PBXGroup;
 			children = (
-				3C29EA10279E2BE80066FE0D /* main.cpp */,
+				3C29EA4727A085CE0066FE0D /* StockTracker */,
+				3C29EA3F279F2CF90066FE0D /* Scraper */,
+				3C29EA3A279EA9880066FE0D /* WebScraper.entitlements */,
+				3C29EA1C279E2D4C0066FE0D /* main.cpp */,
+				3C29EA1E279E2D940066FE0D /* HelloWorld.cpp */,
+				3C29EA1F279E2D940066FE0D /* HelloWorld.hpp */,
+				3C29EA3B279F135D0066FE0D /* CMakeLists.txt */,
 			);
 			path = WebScraper;
+			sourceTree = "<group>";
+		};
+		3C29EA25279E31800066FE0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C29EA2E279E9F480066FE0D /* libgumbo.1.dylib */,
+				3C29EA2C279E9F2C0066FE0D /* libcpr.1.7.2.dylib */,
+				3C29EA2A279E991D0066FE0D /* libgumbo.a */,
+				3C29EA28279E31E10066FE0D /* libcpr.a */,
+				3C29EA26279E31800066FE0D /* include */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C29EA3F279F2CF90066FE0D /* Scraper */ = {
+			isa = PBXGroup;
+			children = (
+				3C29EA41279F2D1E0066FE0D /* Scraper.cpp */,
+				3C29EA40279F2D1E0066FE0D /* Scraper.hpp */,
+				3C29EA43279F50D10066FE0D /* CMakeLists.txt */,
+			);
+			path = Scraper;
+			sourceTree = "<group>";
+		};
+		3C29EA4727A085CE0066FE0D /* StockTracker */ = {
+			isa = PBXGroup;
+			children = (
+				3C29EA4827A085EC0066FE0D /* StockTracker.cpp */,
+				3C29EA4927A085EC0066FE0D /* StockTracker.hpp */,
+			);
+			path = StockTracker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C29EA11279E2BE80066FE0D /* main.cpp in Sources */,
+				3C29EA42279F2D1E0066FE0D /* Scraper.cpp in Sources */,
+				3C29EA4A27A085EC0066FE0D /* StockTracker.cpp in Sources */,
+				3C29EA1D279E2D4C0066FE0D /* main.cpp in Sources */,
+				3C29EA20279E2D940066FE0D /* HelloWorld.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,11 +245,31 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/cpr/1.7.2/lib/;
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lcurl",
+					"-lcpr",
+				);
 				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					/opt/homebrew/Cellar/cpr/1.7.2/include/,
+					"/opt/homebrewWebScraper::WebScraper(string",
+					"urlStr)",
+					"{",
+					m_url,
+					"=",
+					new,
+					"Url{",
+					urlStr,
+					"};",
+					"/opt/homebrew/Cellar/gumbo-parser/0.10.1/include/",
+				);
 			};
 			name = Debug;
 		};
@@ -230,30 +318,65 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/cpr/1.7.2/lib/;
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-lcurl",
+					"-lcpr",
+				);
 				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					/opt/homebrew/Cellar/cpr/1.7.2/include/,
+					"/opt/homebrewWebScraper::WebScraper(string",
+					"urlStr)",
+					"{",
+					m_url,
+					"=",
+					new,
+					"Url{",
+					urlStr,
+					"};",
+					"/opt/homebrew/Cellar/gumbo-parser/0.10.1/include/",
+				);
 			};
 			name = Release;
 		};
 		3C29EA15279E2BE80066FE0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = WebScraper.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = DRKH8X25XM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/include;
+				INFOPLIST_FILE = "$(SRCROOT)/Property List.plist";
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		3C29EA16279E2BE80066FE0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = WebScraper.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = DRKH8X25XM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/include;
+				"HEADER_SEARCH_PATHS[arch=*]" = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Property List.plist";
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
