@@ -19,16 +19,22 @@ string
 Scraper::getResponse()
 {
     m_html = "";
-    printf("Attempting to retrieve html response\n");
+    //printf("Attempting to retrieve html response\n");
     if (m_url != NULL) {
-        printf("Non-null URL\n");
+        //printf("Non-null URL\n");
         Response res = Get(m_url);
         m_html = res.text;
         long status_code = res.status_code;
+        if (status_code != 200) {
+            m_response = NULL;
+            return "ERR_VAL";
+        }
         Url resUrl = res.url;
         cout << "URL: " + resUrl.str() + "\n";
         printf("Status code returned: %ld\n", status_code);
-        
+        if (m_response != NULL) {
+            gumbo_destroy_output(&kGumboDefaultOptions, m_response);
+        }
         m_response = gumbo_parse(m_html.c_str());
     }
     return m_html;
@@ -141,10 +147,11 @@ Scraper::updateTrackedValues()
     if (m_trackingTraces.size() < 1) {
         return;
     }
-    getResponse();
-    for ( auto keyVal: m_trackedValues ) {
-        string name = keyVal.first;
-        m_trackedValues[name] = gumbo_get_attribute(&followTrace(m_response->root, m_trackingTraces.at(name))->v.element.attributes, "value")->value;
+    if (getResponse() != "ERR_VAL") {
+        for ( auto keyVal: m_trackedValues ) {
+            string name = keyVal.first;
+            m_trackedValues[name] = gumbo_get_attribute(&followTrace(m_response->root, m_trackingTraces.at(name))->v.element.attributes, "value")->value;
+        }
     }
 }
 
@@ -195,4 +202,11 @@ Scraper::free()
         gumbo_destroy_output(&kGumboDefaultOptions, m_response);
     }
     m_hrefs.clear();
+    
+    for ( auto keyVal: m_trackingTraces ) {
+        vector<int>* trace = keyVal.second;
+        delete trace;
+    }
+    m_trackedValues.clear();
+    m_trackingTraces.clear();
 }

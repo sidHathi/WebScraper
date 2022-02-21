@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C16F46F27C39D50001116FB /* Crawler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C16F46D27C39D50001116FB /* Crawler.cpp */; };
+		3C19948027B51A4D003C6DF3 /* OCSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C19947E27B51A4D003C6DF3 /* OCSet.cpp */; };
 		3C29EA1D279E2D4C0066FE0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C29EA1C279E2D4C0066FE0D /* main.cpp */; };
 		3C29EA20279E2D940066FE0D /* HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C29EA1E279E2D940066FE0D /* HelloWorld.cpp */; };
 		3C29EA35279EA7BE0066FE0D /* libgumbo.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C29EA2E279E9F480066FE0D /* libgumbo.1.dylib */; };
@@ -14,7 +16,8 @@
 		3C29EA37279EA7C50066FE0D /* libgumbo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C29EA2A279E991D0066FE0D /* libgumbo.a */; };
 		3C29EA38279EA7C70066FE0D /* libcpr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C29EA28279E31E10066FE0D /* libcpr.a */; };
 		3C29EA42279F2D1E0066FE0D /* Scraper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C29EA41279F2D1E0066FE0D /* Scraper.cpp */; };
-		3C29EA4A27A085EC0066FE0D /* StockTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C29EA4827A085EC0066FE0D /* StockTracker.cpp */; };
+		3C29EA5027A2910C0066FE0D /* StockTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C29EA4D27A2910C0066FE0D /* StockTracker.cpp */; };
+		3C29EA5427A3669B0066FE0D /* MarketTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C29EA5227A3669B0066FE0D /* MarketTracker.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +33,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C16F46D27C39D50001116FB /* Crawler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Crawler.cpp; sourceTree = "<group>"; };
+		3C16F46E27C39D50001116FB /* Crawler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Crawler.hpp; sourceTree = "<group>"; };
+		3C19947E27B51A4D003C6DF3 /* OCSet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OCSet.cpp; sourceTree = "<group>"; };
+		3C19947F27B51A4D003C6DF3 /* OCSet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OCSet.hpp; sourceTree = "<group>"; };
 		3C29EA0D279E2BE80066FE0D /* WebScraper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WebScraper; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C29EA1C279E2D4C0066FE0D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
 		3C29EA1E279E2D940066FE0D /* HelloWorld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorld.cpp; sourceTree = SOURCE_ROOT; };
@@ -45,8 +52,11 @@
 		3C29EA41279F2D1E0066FE0D /* Scraper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scraper.cpp; path = Scraper/Scraper.cpp; sourceTree = SOURCE_ROOT; };
 		3C29EA43279F50D10066FE0D /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = CMakeLists.txt; path = Scraper/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		3C29EA4427A0432E0066FE0D /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = "<group>"; };
-		3C29EA4827A085EC0066FE0D /* StockTracker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StockTracker.cpp; sourceTree = "<group>"; };
-		3C29EA4927A085EC0066FE0D /* StockTracker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StockTracker.hpp; sourceTree = "<group>"; };
+		3C29EA4D27A2910C0066FE0D /* StockTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StockTracker.cpp; sourceTree = "<group>"; };
+		3C29EA4E27A2910C0066FE0D /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		3C29EA4F27A2910C0066FE0D /* StockTracker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StockTracker.hpp; sourceTree = "<group>"; };
+		3C29EA5227A3669B0066FE0D /* MarketTracker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MarketTracker.cpp; sourceTree = "<group>"; };
+		3C29EA5327A3669B0066FE0D /* MarketTracker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MarketTracker.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C16F46C27C39D3D001116FB /* Crawler */ = {
+			isa = PBXGroup;
+			children = (
+				3C16F46D27C39D50001116FB /* Crawler.cpp */,
+				3C16F46E27C39D50001116FB /* Crawler.hpp */,
+			);
+			path = Crawler;
+			sourceTree = SOURCE_ROOT;
+		};
+		3C19947D27B51A2C003C6DF3 /* OCSet */ = {
+			isa = PBXGroup;
+			children = (
+				3C19947E27B51A4D003C6DF3 /* OCSet.cpp */,
+				3C19947F27B51A4D003C6DF3 /* OCSet.hpp */,
+			);
+			path = OCSet;
+			sourceTree = SOURCE_ROOT;
+		};
 		3C29EA04279E2BE80066FE0D = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +113,10 @@
 		3C29EA0F279E2BE80066FE0D /* WebScraper */ = {
 			isa = PBXGroup;
 			children = (
-				3C29EA4727A085CE0066FE0D /* StockTracker */,
+				3C16F46C27C39D3D001116FB /* Crawler */,
+				3C19947D27B51A2C003C6DF3 /* OCSet */,
+				3C29EA5127A366830066FE0D /* MarketTracker */,
+				3C29EA4C27A2910C0066FE0D /* StockTracker */,
 				3C29EA3F279F2CF90066FE0D /* Scraper */,
 				3C29EA3A279EA9880066FE0D /* WebScraper.entitlements */,
 				3C29EA1C279E2D4C0066FE0D /* main.cpp */,
@@ -118,14 +149,24 @@
 			path = Scraper;
 			sourceTree = "<group>";
 		};
-		3C29EA4727A085CE0066FE0D /* StockTracker */ = {
+		3C29EA4C27A2910C0066FE0D /* StockTracker */ = {
 			isa = PBXGroup;
 			children = (
-				3C29EA4827A085EC0066FE0D /* StockTracker.cpp */,
-				3C29EA4927A085EC0066FE0D /* StockTracker.hpp */,
+				3C29EA4D27A2910C0066FE0D /* StockTracker.cpp */,
+				3C29EA4E27A2910C0066FE0D /* CMakeLists.txt */,
+				3C29EA4F27A2910C0066FE0D /* StockTracker.hpp */,
 			);
 			path = StockTracker;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
+		};
+		3C29EA5127A366830066FE0D /* MarketTracker */ = {
+			isa = PBXGroup;
+			children = (
+				3C29EA5227A3669B0066FE0D /* MarketTracker.cpp */,
+				3C29EA5327A3669B0066FE0D /* MarketTracker.hpp */,
+			);
+			path = MarketTracker;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -184,8 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C19948027B51A4D003C6DF3 /* OCSet.cpp in Sources */,
+				3C29EA5427A3669B0066FE0D /* MarketTracker.cpp in Sources */,
 				3C29EA42279F2D1E0066FE0D /* Scraper.cpp in Sources */,
-				3C29EA4A27A085EC0066FE0D /* StockTracker.cpp in Sources */,
+				3C16F46F27C39D50001116FB /* Crawler.cpp in Sources */,
+				3C29EA5027A2910C0066FE0D /* StockTracker.cpp in Sources */,
 				3C29EA1D279E2D4C0066FE0D /* main.cpp in Sources */,
 				3C29EA20279E2D940066FE0D /* HelloWorld.cpp in Sources */,
 			);

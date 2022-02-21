@@ -10,14 +10,15 @@
 #include <stdio.h>
 #include "HelloWorld.hpp"
 #include "Scraper.hpp"
+#include "StockTracker.hpp"
+#include "MarketTracker.hpp"
+#include "OCSet/OCSet.hpp"
 
 using namespace std;
 
-int
-main(int argc, char** argv)
+void
+scraperTests()
 {
-//    HelloWorld* hw = new HelloWorld();
-//    hw->printToConsole();
     
     string testUrl = "https://finance.yahoo.com/quote/IBM";
     Scraper* scraper = new Scraper(testUrl);
@@ -27,11 +28,6 @@ main(int argc, char** argv)
     htmlAttribs["data-field"] = "regularMarketPrice";
     
     string html = scraper->getResponse();
-//    ofstream htmlFile("html.txt");
-//    if (htmlFile.is_open()) {
-//        htmlFile << html;
-//        htmlFile.close();
-//    }
     scraper->parseResponse();
     scraper->trackNewElement("price", htmlAttribs);
     unordered_map<string, string> elemMap = scraper->getTrackedValues();
@@ -60,5 +56,65 @@ main(int argc, char** argv)
     }
     //scraper->debug();
     scraper->free();
-    //printf("%s\n", html.data());
+    delete scraper;
+}
+
+void
+startInputLoop(StockTracker* tracker/*, future<void>* trackAsync*/)
+{
+    bool shouldQuit = false;
+    string next;
+    while (!shouldQuit) {
+        cout << "Checking for input" << endl;
+        cin >> next;
+        if ( next.length() > 0 && (next[0] == 'q' || next[0] == 'Q')) {
+//            cout << "Quit Signal received" << endl;
+            shouldQuit = true;
+            tracker->endTracking();
+            return;
+        }
+    }
+}
+
+
+void
+startInputLoop2(MarketTracker* tracker/*, future<void>* trackAsync*/)
+{
+    bool shouldQuit = false;
+    string next;
+    while (!shouldQuit) {
+        cout << "Checking for input" << endl;
+        cin >> next;
+        if ( next.length() > 0 && (next[0] == 'q' || next[0] == 'Q')) {
+//            cout << "Quit Signal received" << endl;
+            shouldQuit = true;
+            tracker->stop();
+            return;
+        }
+    }
+}
+
+int
+main(int argc, char** argv)
+{
+    ocSet_runTests();
+//
+//    StockTracker* appleTracker = new StockTracker("AAPL", 5);
+//
+//    future<void> inputAsync = async(launch::async, &startInputLoop, appleTracker);
+//    future<void> trackAsync = appleTracker->startTracking();
+//
+//    cout << "startTracking exitted\n";
+//    inputAsync.wait();
+//    trackAsync.wait();
+//
+//    appleTracker->free();
+//    delete appleTracker;
+//
+//    vector<string> tickers = {"AAPL", "^GSPC", "DOCU"};
+//    MarketTracker* tracker = new MarketTracker(tickers, 1);
+//    inputAsync = async(launch::async, &startInputLoop2, tracker);
+//    tracker->start();
+//    inputAsync.wait();
+//    tracker->freeTickers();
 }
